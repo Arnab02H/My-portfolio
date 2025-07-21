@@ -1,292 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arnab Bera | Data Science student</title>
 
-    <!-- --------- UNICONS ---------- -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./image/logo.ico" type="image/x-icon">
 
-    <!-- --------- CSS ---------- -->
-    <link rel="stylesheet" href="style3.css">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
 
-    <!-- --------- FAVICON ---------- -->
-    <!-- <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon"> -->
-
-    <title>Portfolio | Arnab Bera</title>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
 </head>
+
 <body>
-   <div class="container">
-    <!-- --------------- HEADER --------------- -->
-      <nav id="header">
-        <div class="nav-logo">
-          <p class="nav-name">Arnab</p>
-            <span>.</span>
-        </div>
-        <div class="nav-menu" id="myNavMenu">
-            <ul class="nav_menu_list">
-                <li class="nav_list">
-                    <a href="#home" class="nav-link active-link">Home</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#about" class="nav-link">About</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <div class="circle"></div>
-                </li>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./image/Profile-img.png" alt="">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="">Arnab Bera</h1>
+          <div class="solo">
+            <div class="stream"><i class="fa-solid fa-building-columns"></i>
+              <p>STUDENT at CMI</p>
+            </div>
+
+            <ul class="social-list">
+              <!-- LinkedIN link  -->
+              <li class="social-item">
+                <a href="https://www.linkedin.com/in/arnab-bera-65a452229/" class="social-link">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+              <!-- Github Link -->
+              <li class="social-item">
+                <a href="https://github.com/Arnab02H" class="social-link">
+                  <i class="fa-brands fa-square-github"></i>
+                </a>
+              </li>
+              <!-- Instagram Link -->
+              <li class="social-item">
+                <a href="https://www.instagram.com/" class="social-link">
+                  <i class="fa-brands fa-square-instagram"></i>
+                </a>
+              </li>
             </ul>
+
+          </div>
+
         </div>
-        <div class="nav-button">
-            <button class="btn"><a href="./pdf-for-download.pdf" download class="download-cv-beside-academic-achievements">Download CV</a> <i class="uil uil-file-alt"></i></button>
-        </div>
-        <div class="nav-menu-btn">
-            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>More Info</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="./image/gmail.png" alt="">
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:arnabbera24122002@gmail.com" class="contact-link">arnabbera24122002@gmail.com</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="./image/leetcode (1).png" alt="">
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Leetcode</p>
+
+              <a href="https://leetcode.com/u/Rokarnab22/">Arnab02H</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Chennai, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
       </nav>
 
 
-    <!-- -------------- MAIN ---------------- -->
-    <main class="wrapper">
-       <!-- -------------- FEATURED BOX ---------------- -->
-       <section class="featured-box" id="home">
-          <div class="featured-text">
-            <div class="featured-text-card">
-                <span>Arnab Bera</span>
-            </div>
-            <div class="featured-name">
-                <p>I'm <span class="typedText"></span></p>
-            </div>
-            <div class="featured-text-info">
-                <p>Hi! My name is Arnab Bera .Aspiring Data Sci
-                    entist currently pursuing MSc in Data Science with a background in Computer Science. 
-                    Passionate about data-driven approaches to solve real-world problems. Continuously seeking opportunities 
-                    to enhance analytical and programming skills through hands-on projects.
-                </p>
-            </div>
-            <div class="featured-text-btn">
-                <button class="btn blue-btn"><a href="academic-achievements-page.html" class="academic-achievements">Academic Acheivements</a></button>
-                <button class="btn"><a href="./pdf-for-download.pdf" download class="download-cv-beside-academic-achievements">Download CV</a> <i class="uil uil-file-alt"></i></button>
-            </div>
-            <div class="social_icons">
-                <div class="icon"><a href="#about"><i class="uil uil-instagram"></i></a></div>
-                <div class="icon"><a href="#about"><i class="uil uil-linkedin-alt"></i></a></div>
-                <div class="icon"><a href="#about"><i class="uil uil-github-alt"></i></a></div>
-                <!-- <div class="icon-leetcode"><a href="#about"><img src="Leetcode.png" alt="LeetCode"></a></div> -->
-
-            </div>
-          </div>
-          <div class="featured-image">
-            <div class="image">
-                <img src="arna.png" alt="avatar">
-            </div>
-          </div>
-          <div class="scroll-icon-box">
-            <a href="#about" class="scroll-btn">
-                <i class="uil uil-mouse-alt"></i>
-                <p>Scroll Down</p>
-            </a>
-          </div>
-
-       </section>
-       <!-- -------------- ABOUT BOX ---------------- -->
-       <section class="section" id="about">
-          <div class="top-header">
-            <h1>About Me</h1>
-          </div>
-          <div class="row">
-            <div class="col">
-                <div class="about-info">
-                    <h3>My introduction</h3>
-                    <p>
-                    Aspiring Data Scientist currently pursuing MSc in Data Science with a background in Computer Science.
-                    Passionate about data-driven approaches to solve real-world problems. Continuously seeking opportunities to enhance analytical and programming skills through hands-on projects.
-               
-                      
-                    </p>
-                    <div class="about-btn">
-                        <button class="btn"><a href="./pdf-for-download.pdf" download class="download-cv">Download CV</a> <i class="uil uil-file-alt"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Programming Languages</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>C</span>
-                        <span>Java</span>
-                        <span>Python</span>
-                        <span>SQL</span>
-                        <span>R</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Libraries</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>NumPy</span>
-                        <span>Pandas</span>
-                        <span>Matplotlib</span>
-                        <span>Seaborn</span>
-                        
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Database</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>MySQL</span>
-                       
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Interest</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>Machine Learning</span>
-                        <span>Deep Learning</span>
-                        <span>Probability and Statistics</span>
-                        <span>Mathematics</span>
-                    </div>
-                </div>
-            </div>
-          </div>
-       </section>
-
-       <!-- -------------- PROJECT BOX ---------------- -->
-
-       <section class="section" id="projects">
-          <div class="top-header">
-              <h1>Projects</h1>
-          </div>
-          <div class="project-container">
-            <div class="project-box">
-                <i class="uil uil-briefcase-alt"></i>
-                <h3>Image Authentication based on Histogram Shifting Method using Arnold’s Cat map</h3>
-                <label>Technologies Used : Python , Opencv </label>
-                <br>
-                <label class="code-demo"><a href="https://drive.google.com/drive/folders/10oWTwQQlF9CFJtNO4X6_erft1hiWRJnO">Report | CODE</a></label>
-                <br>
-                <label><a href="https://drive.google.com/drive/folders/10oWTwQQlF9CFJtNO4X6_erft1hiWRJnO" class="project-1-click">Clcik here to see the projects</a></label>
-            </div>
-          
-            <div class="project-box">
-                <i class="uil uil-briefcase-alt"></i>
-                <h3> Sorting Visualization website</h3>
-                <br>
-                <label>Technologies Used : html,css & javascript</label>
-                <br>
-                <label class="code-demo"><a href="#">Report | CODE</a></label>
-                <br>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-briefcase-alt"></i>
-                <h3>Analysis Gold Price and Trends Sentiments</h3>
-                <label>Technoligies Used: Python</label>
-                <br>
-                <label class="code-demo"><a href="https://gold-data-analysis-web-app.onrender.com" download="visualization-project">Report | CODE</a></label>
-                <br>
-                <label><a href="https://gold-data-analysis-web-app.onrender.com" class="project-1-click">Clcik here to see the projects</a></label>
-            </div>
-            
-          </div>
-       </section>
-
-       <!-- -------------- CONTACT BOX ---------------- -->
-
-       <section class="section" id="contact">
-          <div class="top-header">
-            <h1>Get in touch</h1>
-            <span>Do you have a project in your mind, contact me here</span>
-          </div>
-          <div class="row">
-             <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email:beraarnab40@gmail.com</p>
-                    <p><i class="uil uil-phone"></i> Contact: +91-6297403428</p>
-                    <p><i class="uil uil-instagram"></i>arnab.bera_</p>
-                    
-                    <p><i class="uil uil-linkedin-alt"></i>Arnab Bera</p>
-                </div>
-             </div>
-             <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
-                    </div>
-                    <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn">Send <i class="uil uil-message"></i></button>
-                    </div>
-                </div>
-             </div>
-          </div>
-       </section>
-
-    </main>
 
 
-    <!-- --------------- FOOTER --------------- -->
-    <footer>
-        <div class="top-footer">
-            <p>Arnab Bera .</p>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+       <section class="about-text">
+          <h1>Hi, It's <span>Arnab</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>I'm currently an intern at <a href="#" style="color:rgb(255, 215, 0);">AlgoLabs</a>, where I work in the exciting domain of Generative AI. Alongside this, I'm pursuing my Master’s in Data Science at the prestigious college <a href="https://www.cmi.ac.in" style="color:rgb(255, 215, 0);"target="_blank">Chennai Mathemetical Institute</a> , India. <br/> I hold a Bachelor’s degree in Computer Science from
+            <a href="https://rkmrc.in/" style="color:rgb(255, 215, 0);">Ramakrishna Mission Residential College</a>
+             ,Narendrapur. On this site, I regularly share what I'm learning and building—especially around data science, machine learning, and generative AI.<br> <br>
+            Through this website, I document and share my learning experiences, projects, and insights—especially in the areas of data science, machine learning, and generative AI. Whether it's experimenting with new models, writing tutorials, or reflecting on academic concepts, my goal is to make complex ideas accessible and engaging. </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm interested in?</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./image/icon-design.svg" alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Deep Learning(CNN optimization)</h4>
+                <p class="service-item-text">
+                Exploring CNN optimization techniques like pruning, quantization, and learning rate scheduling to build high-performing, efficient neural networks for real-world image classification problems.                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./image/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">GenAI and LLMs</h4>
+
+                <p class="service-item-text">
+              Working on GenAI and LLMs to develop next-generation applications in natural language understanding, generation, summarization, and task automation with a focus on real life application.                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+            </button>
+
+
+
+
+
+          </section>
+
         </div>
-        <div class="middle-footer">
-            <ul class="footer-menu">
-                <li class="footer_menu_list">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#about">About</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#contact">Contact</a>
-                </li>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Skills</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <i class="fa-solid fa-square-binary"></i>
+                <h4 class="h4 service-item-title">Programming Language</h4>
+
+              </div>
+
+              <div class="service-content-box">
+                <div class="skills">
+                  <div class="skill-box">
+                    <div class="skill-name">C</div>
+                    <div class="skill-name">SQL</div>
+                    <div class="skill-name">Java</div>
+                    <div class="skill-name">Python</div>
+
+                  </div>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./image/icon-dev.svg" alt="Web development icon" width="40" style="margin: 0;">
+                <h4 class="h4 service-item-title">Web development</h4>
+              </div>
+
+              <div class="service-content-box">
+                <div class="skills">
+                  <div class="skill-box">
+                    <div class="skill-name">Html</div>
+                    <div class="skill-name">Css</div>
+                    <div class="skill-name">Js</div>
+                    <div class="skill-name">Tailwind</div>
+                    <div class="skill-name">NextJs</div>
+                  </div>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <i class="fa-brands fa-python"></i>
+                <h4 class="h4 service-item-title">Libraries</h4>
+
+              </div>
+
+              <div class="service-content-box">
+                <div class="skills">
+                  <div class="skill-box">
+                    <div class="skill-name">Numpy</div>
+                    <div class="skill-name">Pandas</div>
+                    <div class="skill-name">MatplotLib</div>
+                    <div class="skill-name">Seaborn</div>
+                    <div class="skill-name">Sklearn</div>
+                    <div class="skill-name">Tensorflow</div>
+                  </div>
+                </div>
+              </div>
+
+            </li>
+          </ul>
+        </section>
+      </article>
+      <!--
+        - #RESUME
+      -->
+
+      <article class="education" data-page="education">
+
+        <header>
+          <h2 class="h2 article-title">Education</h2>
+        </header>
+
+        <!-- EXPERIENCE SECTION -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">GenAI Intern at AlgoLabs</h4>
+
+              <span>May-July,2025</span>
+
+              <p class="timeline-text">
+                I'm currently working as a GeneAI intern at AlgoLabs, where I create an application which will create synthetic image for better training.
+              </p>
+
+            </li>
+
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Subject Matter Expert(Math) at Chegg.</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+                Helped students to solve mathematical problem in chegg platform.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+        <!-- EDUCATION SECTION -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Chennai Mathematical Institute (CMI)</h4>
+              <p><span>M.Sc. In Data Science</span></p>
+
+              <p>Year:&nbsp<span>2024 — 2026</span></p>
+               <p>CGPA:&nbsp<span>8.38 </span></p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ramakrishna Mission Residential College, Narendrapur</h4>
+               <p><span>B.Sc. In Computer Science</span></p>
+
+              <p>Year:&nbsp<span>2021 — 2024</span></p>
+              <p>CGPA:&nbsp<span>8.89 </span></p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sabang S.M. High School</h4>
+              <p>Year:&nbsp<span>2018-2020</span></p>
+              <p>Marks:&nbsp<span>463/500 | <span style="display: inline; font-weight: bold;">92.6%</span></span></p>
+            </li>
+
+          </ol>
+
+        </section>
+
+
+
+      </article>
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="project" data-page="project">
+
+        <header>
+          <h2 class="h2 article-title">Project</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>ML & DL</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>GenAI</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Image Processing</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>ml & dl</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>genai</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>image processing</button>
+              </li>
+
             </ul>
-        </div>
-        <div class="footer-social-icons">
-            <div class="icon"><i class="uil uil-instagram">  <a href="https://www.instagram.com/arnab.bera_/"></a></i></div>
-            <div class="icon"><i class="uil uil-linkedin-alt"><a href="https://www.linkedin.com/in/arnab-bera-65a452229/"></a></i></div>
-            <div class="icon"><i class="uil uil-github-alt"><a href="https://github.com/Arnab02H"></a></i></div>
-        </div>
-        <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Arnab Bera</a> - All rights reserved</p>
-        </div>
-    </footer>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="image Processing">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./image/Project-Image-Histo.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Image Authentication using Histogram Shifting with arnold Cat Map</h3>
+
+                <div class="project-cat">
+                  <a href="https://github.com/Arnab02H/Image-Authentication-based-on-Histogram-Shifting-Using-Arnold-s-Cat-Map" class="btn" target="_blank">GitHub</a>
+                  <a href="https://niladrighosh03.github.io/steganography-project/" class="btn" target="_blank">Live Now</a>
+                </div>
+
+              </a>
+            </li>
+
+
+
+            <li class="project-item  active" data-filter-item data-category="genai">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./image/genAI.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Image Generation Using StyleGAN</h3>
+
+                 <div class="project-cat">
+                  <a href="#" class="btn">GitHub</a>
+                  <a href="#" class="btn">Live Now</a>
+                </div>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="ml & dl">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./image/project-nlp.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Crisis vs Non-Crisis: A Logistic Regression Approach to Text Classification</h3>
+
+                <div class="project-cat">
+                  <a href="#" class="btn">GitHub</a>
+                  <a href="#" class="btn">Live Now</a>
+                </div>
+              </a>
+            </li>
+            <!-- Exploratory Data Analysis Project -->
+             <li class="project-item  active" data-filter-item data-category="ml & dl">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./image/EDA.jpg" alt="EDA Image" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Gold Data Analysis Web Application</h3>
+
+                <div class="project-cat">
+                  <a href="https://github.com/Arnab02H/Gold-Data-Analysis-Web-App" class="btn" target="_blank">GitHub</a>
+                  <a href="https://gold-data-analysis-web-app.onrender.com/" class="btn"  target="_blank">Live Now</a>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./image/blog-page-1.png" alt="linear regression" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Blog</p>
+
+                    <span class="dot"></span>
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Straight Line, Serious Results: A Love Letter to Linear Regression</h3>
+
+                  <p class="blog-text">Lost in the Noise? Follow the Line!</p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.13131215327!2d80.043859901889!3d13.047473316368214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1752862562392!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
 
     </div>
 
+  </main>
 
 
 
-    <!-- ----- TYPING JS Link ----- -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-       <!-- ----- SCROLL REVEAL JS Link----- -->
-    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- ----- MAIN JS ----- -->
-    <script src="script3.js"></script>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://kit.fontawesome.com/6e50006f95.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
