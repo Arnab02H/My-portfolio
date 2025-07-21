@@ -1213,7 +1213,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 450px screen
  */
 
-@media (max-width: 330px) {
+@media (max-width: 350px) {
 
   /**
    * client
